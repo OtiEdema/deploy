@@ -25,7 +25,7 @@ To run the application, you need to have Python installed on your system. Follow
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/virtual-fitness-trainer.git
+    git clone 
     cd virtual-fitness-trainer
     ```
 
