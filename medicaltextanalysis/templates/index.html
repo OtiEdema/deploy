@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical AI Text Analysis</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="/static/medical_ai_header.png" alt="Medical AI Header" class="header-image">
+        <h1>Medical AI Text Analysis</h1>
+    </div>
+    <div class="container">
+        <form action="/process" method="POST">
+            <textarea name="paragraph" placeholder="Enter your medical text here..." required>{{ paragraph }}</textarea>
+            <input type="text" name="word" placeholder="Enter word to find similar words" required value="{{ word }}">
+            <button type="submit">Analyze Text</button>
+        </form>
+        {% if similar_words %}
+        <div class="results">
+            <h2>Results for '{{ word }}':</h2>
+            <ul>
+                {% if similar_words != "Word not in vocabulary." %}
+                    {% for similar in similar_words %}
+                        <li>{{ similar[0] }}: {{ similar[1] }}</li>
+                    {% endfor %}
+                {% else %}
+                    <li>{{ similar_words }}</li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+        {% if entities %}
+        <div class="results">
+            <h2>Extracted Entities:</h2>
+            <ul>
+                {% for entity in entities %}
+                    <li>{{ entity[0] }}: {{ entity[1] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -51,7 +51,7 @@ To run the application, you need to have Python installed on your system. Follow
 
 ## License
 
-This project is licensed under the MIT License.
+All rights reserved, you must take permission from the author before using these codes.
 
 ---
 
