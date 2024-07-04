@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Lang Translator</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Lang Translator</h1>
+        <textarea id="userText" rows="10" cols="50" placeholder="Enter text to translate..."></textarea><br>
+        <label for="entityToggle">Show Extracted Entities</label>
+        <input type="checkbox" id="entityToggle"><br>
+        <button onclick="translateText()">Translate</button>
+        <h2>Translated Text</h2>
+        <div id="translatedText"></div>
+    </div>
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>

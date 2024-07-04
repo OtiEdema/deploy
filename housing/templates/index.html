@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">House Price Predictor</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/comparison">Compare Models</a></li>
+                <li class="nav-item"><a class="nav-link" href="/upload">Batch Prediction</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1 class="mb-4">Predict House Price</h1>
+        <p class="lead">The best model based on R-squared is: <strong>{{ best_model }}</strong></p>
+        <form action="/predict" method="post" class="mb-4">
+            <div class="form-group">
+                <label for="model">Select Model:</label>
+                <select class="form-control" name="model" id="model">
+                    {% for model in model_names %}
+                        <option value="{{ model }}">{{ model }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Avg. Area Income">Avg. Area Income:</label>
+                <input type="text" class="form-control" name="Avg. Area Income" required>
+            </div>
+            <div class="form-group">
+                <label for="Avg. Area House Age">Avg. Area House Age:</label>
+                <input type="text" class="form-control" name="Avg. Area House Age" required>
+            </div>
+            <div class="form-group">
+                <label for="Avg. Area Number of Rooms">Avg. Area Number of Rooms:</label>
+                <input type="text" class="form-control" name="Avg. Area Number of Rooms" required>
+            </div>
+            <div class="form-group">
+                <label for="Avg. Area Number of Bedrooms">Avg. Area Number of Bedrooms:</label>
+                <input type="text" class="form-control" name="Avg. Area Number of Bedrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="Area Population">Area Population:</label>
+                <input type="text" class="form-control" name="Area Population" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+        <hr>
+        <h2>Instructions</h2>
+        <p class="lead">To predict house prices:</p>
+        <ul>
+            <li>Select a model from the dropdown menu.</li>
+            <li>Enter the required features for the house.</li>
+            <li>Click "Predict" to see the estimated house price.</li>
+        </ul>
+        <p class="lead">To compare models:</p>
+        <ul>
+            <li>Click on "Compare Models" in the navigation bar.</li>
+        </ul>
+        <p class="lead">To predict prices for multiple houses:</p>
+        <ul>
+            <li>Click on "Batch Prediction" in the navigation bar.</li>
+            <li>Upload a CSV file with the required features for multiple houses.</li>
+        </ul>
+    </div>
+</body>
+</html>
