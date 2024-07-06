@@ -1,5 +1,9 @@
 # Virtual Fitness Trainer
 
+
+https://github.com/OtiEdema/deploy/assets/71005527/640ff96a-8e85-4a57-9632-345b9d16da1b
+
+
 ## Overview
 
 The Virtual Fitness Trainer is an innovative application designed to revolutionize the way we approach fitness and exercise using advanced AI and Machine Learning technologies. This application provides real-time feedback on exercise form, ensuring optimal performance and minimizing injury risk.

@@ -1,5 +1,9 @@
 Face and Eye Detection App
 
+![video multi detect](https://github.com/OtiEdema/deploy/assets/71005527/9d1372ba-7f8c-455d-b6cc-c54cd52cd769)
+
+https://github.com/OtiEdema/deploy/assets/71005527/aabc8585-1055-4bae-b295-a7ff5ad040b3
+
 This project is a web application that performs face and eye detection using OpenCV and Streamlit. The app allows users to upload images and videos or use live camera feed for face and eye detection.
 
 Features

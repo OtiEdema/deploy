@@ -16,11 +16,7 @@ This project is a simple email spam detection system that uses machine learning 
 To set up the project, follow these steps:
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/email-spam-detection.git
-    cd email-spam-detection
-    ```
-
+    
 2. Create a virtual environment and activate it:
     ```bash
     python -m venv myenv

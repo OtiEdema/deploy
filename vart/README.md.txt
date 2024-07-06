@@ -1,5 +1,8 @@
 Interactive Virtual Art Studio
 
+https://github.com/OtiEdema/deploy/assets/71005527/4051cddd-6e0a-4299-a898-446261c4a8e2
+
+
 Overview
 The Interactive Virtual Art Studio is an AI-powered application designed to enhance and manipulate digital art through real-time video and image processing. Utilizing computer vision techniques, the application allows users to apply color masking, identify and tag specific colors in live video feeds and uploaded videos, and transform images with various artistic effects.
 

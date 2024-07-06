@@ -1,5 +1,9 @@
 # House Price Prediction App
 
+
+https://github.com/OtiEdema/deploy/assets/71005527/7af4002f-ff3a-459b-ac32-b0ec8bada4df
+
+
 This project is a web application for predicting house prices using various regression models. The application is built using Flask for the backend and Bootstrap for the frontend. It supports individual house price predictions, model comparisons, and batch predictions from CSV files.
 
 ## Features
