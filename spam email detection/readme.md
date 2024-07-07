@@ -1,5 +1,8 @@
 # Email Spam Detection
 
+![portfolio-11](https://github.com/OtiEdema/deploy/assets/71005527/70259a8a-9750-4e81-8338-311aaef73c94)
+
+
 This project is a simple email spam detection system that uses machine learning models to classify emails as spam or not spam (ham). It includes both a Naive Bayes model and an LSTM-based neural network model. The project also provides a Streamlit-based web interface for users to interact with the models and classify email messages.
 
 ## Table of Contents
