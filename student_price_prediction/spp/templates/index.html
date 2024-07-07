@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Mark Predictor ML App</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #E0E0E0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #00BCD4;
+    }
+
+    .container {
+      background-color: #1F1F1F;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
+      text-align: center;
+      width: 400px;
+    }
+
+    .input-field {
+      width: 80%;
+      padding: 10px;
+      margin: 15px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #E0E0E0;
+      font-size: 16px;
+    }
+
+    .button_css {
+      color: #E0E0E0;
+      background: #00BCD4;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.4s ease;
+    }
+
+    .button_css:hover {
+      background: #0097A7;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      max-width: 1000px; /* Ensures the image does not exceed this width */
+      margin-bottom: 20px;
+      border-radius: 8px; /* Optional: Rounds the corners of the banner image */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Show University Banner -->
+  <div class="banner">
+    <img src="static/images/college_banner2.png" alt="University Banner">
+  </div>
+
+  <div class="container">
+    <!-- Form to get input to predict Marks -->
+    <h1>Enter Your Study Hours to Predict Marks</h1>
+    <form action="/predict" method="post">
+      <input class="input-field" type="number" name="study_hours" placeholder="Study hours" min="1" max="24" required />
+      <button type="submit" class="button_css">Predict Marks</button>
+    </form>
+    <!-- Show predicted output using ML model -->
+    <div>
+      <h2>{{ prediction_text }}</h2>
+    </div>
+  </div>
+
+</body>
+</html>
+
