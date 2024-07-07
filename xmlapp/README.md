@@ -27,10 +27,7 @@ This project is a robust AI-powered application designed to process and analyze 
 ## Installation
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/otiedema/ai-xml-text-processing.git
-   cd ai-xml-text-processing
-
+   
 2. Create and Activate a Virtual Environment:
    python -m venv venv
    source venv/bin/activate  
