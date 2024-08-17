@@ -109,6 +109,6 @@ Example queries can be entered to see how the app retrieves and generates answer
 This RAG application demonstrates how to effectively use LangChain, FAISS, and Hugging Face Transformers to build an AI-powered document analysis tool. The app is versatile and can be expanded with additional features such as multi-document analysis or integration with other enterprise systems.
 
 ## Contact
-For questions, suggestions, or collaborations, please reach out to [Your Name] at [Your Email Address].
+For questions, suggestions, or collaborations, please reach out to me here at GitHub or Linkedin
 
 
