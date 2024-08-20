@@ -1,4 +1,7 @@
 AI-Powered Document Analysis with RAG and Summarization
+
+https://github.com/user-attachments/assets/11cce4f7-79a6-47b1-9772-09a4796e4b6f
+
 Overview
 This project demonstrates the implementation of an AI-powered application that uses Retrieval-Augmented Generation (RAG) to analyze and retrieve information from documents. The application is built using Large Language Models (LLMs) and Natural Language Processing (NLP) techniques, with the added capability of document summarization. The app allows users to upload a document, ask questions based on the document's content, and receive precise, context-aware answers. Additionally, it offers the ability to summarize lengthy documents according to a user-defined summarization percentage.
 
